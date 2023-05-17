@@ -1,0 +1,1434 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(247, 247, 247)
+}
+
+.main {
+    width: 100%;
+}
+
+.naglowek {
+    width: 100%;
+    height: 150px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.naglowek h1 {
+    font-size: 60px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+
+.main_content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.left, .right {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.arrow {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.line {
+    position: absolute;
+    width: 5px;
+    height: 7170px;
+    background-color: black;
+    margin-top: 25px;
+    z-index: 1;
+}
+
+.atari_date_box {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 20px;
+    position: absolute;
+}
+
+.nes_date_box {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 515px;
+    position: absolute;
+}
+
+.master_date_box {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 1050px;
+    position: absolute;
+}
+
+.snes_date_box {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 1565px;
+    position: absolute;
+}
+
+.ps1_date_box {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 2070px;
+    position: absolute;
+}
+
+.saturn_date_box {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 2545px;
+    position: absolute;
+}
+
+.n64_date_box {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 3000px;
+    position: absolute;
+}
+
+.dreamcast_date_box {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 3505px;
+    position: absolute;
+}
+
+.ps2_date_box {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 3960px;
+    position: absolute;
+}
+
+.xbox_date_box {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 4485px;
+    position: absolute;
+}
+
+.gamecube_date_box {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 5000px;
+    position: absolute;
+}
+
+.xbox360_date_box {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 5465px;
+    position: absolute;
+}
+
+.wii_date_box {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 6150px;
+    position: absolute;
+}
+
+.ps3_date_box {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 6750px;
+    position: absolute;
+}
+
+.end_date_box {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 7185px;
+    position: absolute;
+}
+
+.triangle {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;  
+    border-top: 18px solid black;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.date {
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.atari_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.atari_naglowek, .atari_image, .atari_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.atari_naglowek h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.atari_text p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#atari_image {
+    width: 220px;
+    height: 150px;
+}
+
+.atari_square1 {
+    width: 500px;
+    height: 170px;
+    margin-top: 80px;
+    margin-left: 90px;
+    background-color: rgba(128, 90, 49, 40%);
+    transform: rotate(-15deg);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.atari_square2 {
+    width: 450px;
+    height: 170px;
+    margin-top: 230px;
+    margin-left: -60px;
+    background-color: rgba(128, 90, 49, 40%);
+    transform: rotate(-5deg);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.fake_atari_box {
+    width: 100%;
+    background-color: black;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.nes_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.nes_naglowek, .nes_image, .nes_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.nes_naglowek h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.nes_text p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#nes_image {
+    width: 220px;
+    height: 150px;
+}
+
+.nes_square1 {
+    width: 300px;
+    height: 80px;
+    margin-top: 570px;
+    margin-left: -250px;
+    background-color: rgba(177, 0, 2, 30%);
+    transform: rotate(60deg);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.nes_square2 {
+    width: 200px;
+    height: 80px;
+    margin-top: 820px;
+    margin-left: 385px;
+    background-color: rgba(177, 0, 2, 30%);
+    transform: rotate(-15deg);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.fake_nes_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    visibility: hidden;
+}
+
+.master_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.master_naglowek, .master_image, .master_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.master_naglowek h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.master_text p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#master_image {
+    width: 220px;
+    height: 150px;
+}
+
+.master_triangle1 {
+    width: 0;
+    height: 0;
+    margin-top: 980px;
+    margin-left: 280px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;  
+    border-top: 150px solid rgba(170, 67, 68, 30%);
+    transform: rotate(110deg);
+    position: absolute;
+    z-index: 1;
+}
+
+.master_triangle2 {
+    width: 0;
+    height: 0;
+    margin-top: 1335px;
+    margin-left: -340px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;  
+    border-top: 150px solid rgba(52, 48, 54, 30%);
+    transform: rotate(68deg);
+    position: absolute;
+    z-index: 1;
+}
+
+.fake_master_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    visibility: hidden;
+}
+
+.snes_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.snes_naglowek, .snes_image, .snes_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.snes_naglowek h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.snes_text p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#snes_image {
+    width: 220px;
+    height: 180px;
+}
+
+.snes_circle1 {
+    width: 300px;
+    height: 80px;
+    margin-top: 1625px;
+    margin-left: -150px;
+    background-color: rgba(129, 154, 229, 30%);
+    transform: rotate(65deg);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.snes_circle2 {
+    width: 200px;
+    height: 200px;
+    margin-top: 1775px;
+    margin-left: 320px;
+    background-color: rgba(128, 78, 170, 30%);
+    transform: rotate(-15deg);
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.fake_snes_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    visibility: hidden;
+}
+
+.ps1_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.ps1_naglowek, .ps1_image, .ps1_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.ps1_naglowek h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.ps1_text p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#ps1_image {
+    width: 280px;
+    height: 150px;
+}
+
+.ps1_figure1 {
+    width: 230px;
+    height: 80px;
+    margin-top: 2250px;
+    margin-left: 500px;
+    background-color: rgba(81, 162, 142, 30%);
+    transform: rotate(100deg);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.ps1_figure2 {
+    width: 200px;
+    height: 200px;
+    margin-top: 2020px;
+    margin-left: -300px;
+    background-color: rgba(197, 151, 108, 30%);
+    transform: rotate(-15deg);
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.fake_ps1_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    visibility: hidden;
+}
+
+.saturn_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.saturn_naglowek, .saturn_image, .saturn_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.saturn_naglowek h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.saturn_text p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#saturn_image {
+    width: 280px;
+    height: 150px;
+}
+
+.saturn_figure1 {
+    width: 230px;
+    height: 80px;
+    margin-top: 2620px;
+    margin-left: 420px;
+    background-color: rgba(0, 0, 0, 30%);
+    transform: rotate(-50deg);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.saturn_figure2 {
+    width: 230px;
+    height: 80px;
+    margin-top: 2700px;
+    margin-left: -420px;
+    background-color: rgba(0, 0, 0, 30%);
+    transform: rotate(-60deg);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.fake_saturn_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    visibility: hidden;
+}
+
+.n64_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.n64_naglowek, .n64_image, .n64_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.n64_naglowek h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.n64_text p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#n64_image {
+    width: 280px;
+    height: 180px;
+}
+
+.n64_figure1 {
+    width: 220px;
+    height: 220px;
+    margin-top: 2940px;
+    margin-left: 280px;
+    background-color: rgba(0, 55, 138, 30%);
+    transform: rotate(-50deg);
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.n64_figure2 {
+    width: 220px;
+    height: 220px;
+    margin-top: 3150px;
+    margin-left: -380px;
+    background-color: rgba(63, 144, 29, 30%);
+    transform: rotate(-60deg);
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.fake_n64_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    
+    margin-top: 100px;
+    visibility: hidden;
+}
+
+.dreamcast_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.dreamcast_naglowek, .dreamcast_image, .dreamcast_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.dreamcast_naglowek h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.dreamcast_text p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#dreamcast_image {
+    width: 280px;
+    height: 150px;
+}
+
+.dreamcast_figure1 {
+    width: 80px;
+    height: 80px;
+    margin-top: 3470px;
+    margin-left: -450px;
+    background-color: rgba(42, 112, 207, 30%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.dreamcast_figure2 {
+    width: 80px;
+    height: 80px;
+    margin-top: 3720px;
+    margin-left: -490px;
+    background-color: rgba(102, 193, 128, 30%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.dreamcast_figure3 {
+    width: 80px;
+    height: 80px;
+    margin-top: 3500px;
+    margin-left: 500px;
+    background-color: rgba(224, 88, 79, 30%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.dreamcast_figure4 {
+    width: 80px;
+    height: 80px;
+    margin-top: 3775px;
+    margin-left: 400px;
+    background-color: rgba(242, 205, 9, 30%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.fake_dreamcast_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    visibility: hidden;
+}
+
+.ps2_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.ps2_naglowek, .ps2_image, .ps2_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.ps2_naglowek h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.ps2_text p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#ps2_image {
+    width: 280px;
+    height: 180px;
+}
+
+.ps2_figure1 {
+    width: 180px;
+    height: 80px;
+    margin-top: 3960px;
+    margin-left: 410px;
+    background-color: rgba(114, 173, 242, 30%);
+    transform: rotate(220deg);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.ps2_figure2 {
+    width: 180px;
+    height: 80px;
+    margin-top: 4260px;
+    margin-left: -400px;
+    background-color: rgba(24, 232, 239, 30%);
+    transform: rotate(220deg);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.fake_ps2_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    
+    margin-top: 100px;
+    visibility: hidden;
+}
+
+.xbox_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.xbox_naglowek, .xbox_image, .xbox_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.xbox_naglowek h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.xbox_text p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#xbox_image {
+    width: 300px;
+    height: 150px;
+}
+
+.xbox_figure1 {
+    width: 0;
+    height: 0;
+    margin-top: 4320px;
+    margin-left: -450px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;  
+    border-top: 150px solid rgba(74, 172, 48, 30%);
+    transform: rotate(320deg);
+    position: absolute;
+    z-index: 1;
+}
+
+.xbox_figure2 {
+    width: 0;
+    height: 0;
+    margin-top: 4560px;
+    margin-left: -450px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;  
+    border-top: 150px solid rgba(74, 172, 48, 30%);
+    transform: rotate(-145deg);
+    position: absolute;
+    z-index: 1;
+}
+
+.xbox_figure3 {
+    width: 0;
+    height: 0;
+    margin-top: 4565px;
+    margin-left: 430px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;  
+    border-top: 150px solid rgba(74, 172, 48, 30%);
+    transform: rotate(-215deg);
+    position: absolute; 
+    z-index: 1;
+}
+
+.xbox_figure4 {
+    width: 0;
+    height: 0;
+    margin-top: 4320px;
+    margin-left: 435px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;  
+    border-top: 150px solid rgba(74, 172, 48, 30%);
+    transform: rotate(-330deg);
+    position: absolute;
+    z-index: 1;
+}
+
+.fake_xbox_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    visibility: hidden;
+}
+
+.gamecube_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.gamecube_naglowek, .gamecube_image, .gamecube_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.gamecube_naglowek h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.gamecube_text p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#gamecube_image {
+    width: 280px;
+    height: 160px;
+}
+
+.gamecube_figure1 {
+    width: 80px;
+    height: 80px;
+    margin-top: 4800px;
+    margin-left: -450px;
+    background-color: rgba(238, 46, 62, 30%);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.gamecube_figure2 {
+    width: 80px;
+    height: 80px;
+    margin-top: 5000px;
+    margin-left: -550px;
+    background-color: rgba(74, 65, 120, 30%);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.gamecube_figure3 {
+    width: 80px;
+    height: 80px;
+    margin-top: 4900px;
+    margin-left: 550px;
+    background-color: rgba(18, 183, 122, 30%);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.gamecube_figure4 {
+    width: 80px;
+    height: 80px;
+    margin-top: 5105px;
+    margin-left: 400px;
+    background-color: rgba(255, 238, 0, 30%);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.fake_gamecube_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    visibility: hidden;
+}
+
+.xbox360_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.xbox360_naglowek, .xbox360_image, .xbox360_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.xbox360_naglowek h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.xbox360_text p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#xbox360_image {
+    width: 280px;
+    height: 380px;
+}
+
+.xbox360_figure1 {
+    width: 120px;
+    height: 60px;
+    margin-top: 5370px;
+    margin-left: 530px;
+    background-color: rgba(223, 140, 1, 30%);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.xbox360_figure2 {
+    width: 220px;
+    height: 65px;
+    margin-top: 5760px;
+    margin-left: -480px;
+    background-color: rgba(102, 104, 12, 30%);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+    transform: rotate(-320deg);
+}
+
+.xbox360_figure3 {
+    width: 120px;
+    height: 60px;
+    margin-top: 5300px;
+    margin-left: 510px;
+    background-color: rgba(193, 0, 10, 30%);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.fake_xbox360_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    visibility: hidden;
+}
+
+.wii_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.wii_naglowek, .wii_image, .wii_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.wii_naglowek h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.wii_text p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#wii_image {
+    width: 280px;
+    height: 300px;
+}
+
+.wii_figure1 {
+    width: 220px;
+    height: 65px;
+    margin-top: 5990px;
+    margin-left: 250px;
+    background-color: rgba(196, 102, 107, 30%);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+    transform: rotate(300deg);
+}
+
+.wii_figure2 {
+    width: 220px;
+    height: 65px;
+    margin-top: 6320px;
+    margin-left: -300px;
+    background-color: rgba(94, 173, 248, 30%);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+    transform: rotate(300deg);
+}
+
+.fake_wii_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    visibility: hidden;
+}
+
+.ps3_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+
+.ps3_naglowek, .ps3_image, .ps3_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.ps3_naglowek h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.ps3_text p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#ps3_image {
+    width: 300px;
+    height: 180px;
+}
+
+.foot {
+    width: 100%;
+    height: 100px;
+}
