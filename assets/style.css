@@ -3,12 +3,31 @@
     padding: 0;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: rgb(247, 247, 247)
 }
 
 .main {
     width: 100%;
+}
+
+.menu {
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+}
+
+.menu ul li:hover {
+    cursor: pointer;
+}
+
+.menu li:hover .yellow_line {
+    width: 100%;
+    transition: 0.2s ease-in-out;
 }
 
 .naglowek {
@@ -27,7 +46,6 @@ body {
 }
 
 .menu {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +56,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     font-size: 25px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
@@ -49,6 +67,13 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 150px;
+}
+
+.yellow_line {
+    width: 0%;
+    height: 3px;
+    background-color: rgb(138, 138, 26);
+    transition: 0.2s ease-in-out;
 }
 
 .left, .right {
@@ -214,7 +239,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 5px;
-    padding-top: 6150px;
+    padding-top: 6065px;
     position: absolute;
 }
 
@@ -225,7 +250,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 5px;
-    padding-top: 6750px;
+    padding-top: 6675px;
     position: absolute;
 }
 
@@ -313,7 +338,7 @@ body {
     width: 500px;
     height: 170px;
     margin-top: 80px;
-    margin-left: 90px;
+    margin-left: 60px;
     background-color: rgba(128, 90, 49, 40%);
     transform: rotate(-15deg);
     position: absolute;
@@ -325,7 +350,7 @@ body {
     width: 450px;
     height: 170px;
     margin-top: 230px;
-    margin-left: -60px;
+    margin-left: 15px;
     background-color: rgba(128, 90, 49, 40%);
     transform: rotate(-5deg);
     position: absolute;
@@ -391,8 +416,8 @@ body {
 .nes_square1 {
     width: 300px;
     height: 80px;
-    margin-top: 570px;
-    margin-left: -250px;
+    margin-top: 180px;
+    margin-left: -20px;
     background-color: rgba(177, 0, 2, 30%);
     transform: rotate(60deg);
     position: absolute;
@@ -403,8 +428,8 @@ body {
 .nes_square2 {
     width: 200px;
     height: 80px;
-    margin-top: 820px;
-    margin-left: 385px;
+    margin-top: 430px;
+    margin-left: 360px;
     background-color: rgba(177, 0, 2, 30%);
     transform: rotate(-15deg);
     position: absolute;
@@ -471,7 +496,7 @@ body {
 .master_triangle1 {
     width: 0;
     height: 0;
-    margin-top: 980px;
+    margin-top: 50px;
     margin-left: 280px;
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;  
@@ -484,8 +509,8 @@ body {
 .master_triangle2 {
     width: 0;
     height: 0;
-    margin-top: 1335px;
-    margin-left: -340px;
+    margin-top: 410px;
+    margin-left: 20px;
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;  
     border-top: 150px solid rgba(52, 48, 54, 30%);
@@ -553,8 +578,8 @@ body {
 .snes_circle1 {
     width: 300px;
     height: 80px;
-    margin-top: 1625px;
-    margin-left: -150px;
+    margin-top: 170px;
+    margin-left: -20px;
     background-color: rgba(129, 154, 229, 30%);
     transform: rotate(65deg);
     position: absolute;
@@ -565,8 +590,8 @@ body {
 .snes_circle2 {
     width: 200px;
     height: 200px;
-    margin-top: 1775px;
-    margin-left: 320px;
+    margin-top: 330px;
+    margin-left: 300px;
     background-color: rgba(128, 78, 170, 30%);
     transform: rotate(-15deg);
     position: absolute;
@@ -633,8 +658,8 @@ body {
 .ps1_figure1 {
     width: 230px;
     height: 80px;
-    margin-top: 2250px;
-    margin-left: 500px;
+    margin-top: 150px;
+    margin-left: 250px;
     background-color: rgba(81, 162, 142, 30%);
     transform: rotate(100deg);
     position: absolute;
@@ -645,8 +670,8 @@ body {
 .ps1_figure2 {
     width: 200px;
     height: 200px;
-    margin-top: 2020px;
-    margin-left: -300px;
+    margin-top: 300px;
+    margin-left: 20px;
     background-color: rgba(197, 151, 108, 30%);
     transform: rotate(-15deg);
     position: absolute;
@@ -713,8 +738,8 @@ body {
 .saturn_figure1 {
     width: 230px;
     height: 80px;
-    margin-top: 2620px;
-    margin-left: 420px;
+    margin-top: 200px;
+    margin-left: 350px;
     background-color: rgba(0, 0, 0, 30%);
     transform: rotate(-50deg);
     position: absolute;
@@ -725,8 +750,8 @@ body {
 .saturn_figure2 {
     width: 230px;
     height: 80px;
-    margin-top: 2700px;
-    margin-left: -420px;
+    margin-top: 250px;
+    margin-left: -50px;
     background-color: rgba(0, 0, 0, 30%);
     transform: rotate(-60deg);
     position: absolute;
@@ -793,7 +818,7 @@ body {
 .n64_figure1 {
     width: 220px;
     height: 220px;
-    margin-top: 2940px;
+    margin-top: 60px;
     margin-left: 280px;
     background-color: rgba(0, 55, 138, 30%);
     transform: rotate(-50deg);
@@ -805,8 +830,8 @@ body {
 .n64_figure2 {
     width: 220px;
     height: 220px;
-    margin-top: 3150px;
-    margin-left: -380px;
+    margin-top: 270px;
+    margin-left: -40px;
     background-color: rgba(63, 144, 29, 30%);
     transform: rotate(-60deg);
     position: absolute;
@@ -874,8 +899,8 @@ body {
 .dreamcast_figure1 {
     width: 80px;
     height: 80px;
-    margin-top: 3470px;
-    margin-left: -450px;
+    margin-top: 80px;
+    margin-left: 40px;
     background-color: rgba(42, 112, 207, 30%);
     position: absolute;
     border-radius: 50%;
@@ -885,8 +910,8 @@ body {
 .dreamcast_figure2 {
     width: 80px;
     height: 80px;
-    margin-top: 3720px;
-    margin-left: -490px;
+    margin-top: 350px;
+    margin-left: -20px;
     background-color: rgba(102, 193, 128, 30%);
     position: absolute;
     border-radius: 50%;
@@ -896,8 +921,8 @@ body {
 .dreamcast_figure3 {
     width: 80px;
     height: 80px;
-    margin-top: 3500px;
-    margin-left: 500px;
+    margin-top: 130px;
+    margin-left: 480px;
     background-color: rgba(224, 88, 79, 30%);
     position: absolute;
     border-radius: 50%;
@@ -907,8 +932,8 @@ body {
 .dreamcast_figure4 {
     width: 80px;
     height: 80px;
-    margin-top: 3775px;
-    margin-left: 400px;
+    margin-top: 400px;
+    margin-left: 430px;
     background-color: rgba(242, 205, 9, 30%);
     position: absolute;
     border-radius: 50%;
@@ -974,8 +999,8 @@ body {
 .ps2_figure1 {
     width: 180px;
     height: 80px;
-    margin-top: 3960px;
-    margin-left: 410px;
+    margin-top: 100px;
+    margin-left: 400px;
     background-color: rgba(114, 173, 242, 30%);
     transform: rotate(220deg);
     position: absolute;
@@ -986,8 +1011,8 @@ body {
 .ps2_figure2 {
     width: 180px;
     height: 80px;
-    margin-top: 4260px;
-    margin-left: -400px;
+    margin-top: 440px;
+    margin-left: -40px;
     background-color: rgba(24, 232, 239, 30%);
     transform: rotate(220deg);
     position: absolute;
@@ -1055,11 +1080,11 @@ body {
 .xbox_figure1 {
     width: 0;
     height: 0;
-    margin-top: 4320px;
-    margin-left: -450px;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;  
-    border-top: 150px solid rgba(74, 172, 48, 30%);
+    margin-top: 100px;
+    margin-left: -20px;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;  
+    border-top: 130px solid rgba(74, 172, 48, 30%);
     transform: rotate(320deg);
     position: absolute;
     z-index: 1;
@@ -1068,38 +1093,12 @@ body {
 .xbox_figure2 {
     width: 0;
     height: 0;
-    margin-top: 4560px;
-    margin-left: -450px;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;  
-    border-top: 150px solid rgba(74, 172, 48, 30%);
+    margin-top: 380px;
+    margin-left: -20px;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;  
+    border-top: 130px solid rgba(74, 172, 48, 30%);
     transform: rotate(-145deg);
-    position: absolute;
-    z-index: 1;
-}
-
-.xbox_figure3 {
-    width: 0;
-    height: 0;
-    margin-top: 4565px;
-    margin-left: 430px;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;  
-    border-top: 150px solid rgba(74, 172, 48, 30%);
-    transform: rotate(-215deg);
-    position: absolute; 
-    z-index: 1;
-}
-
-.xbox_figure4 {
-    width: 0;
-    height: 0;
-    margin-top: 4320px;
-    margin-left: 435px;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;  
-    border-top: 150px solid rgba(74, 172, 48, 30%);
-    transform: rotate(-330deg);
     position: absolute;
     z-index: 1;
 }
@@ -1163,8 +1162,8 @@ body {
 .gamecube_figure1 {
     width: 80px;
     height: 80px;
-    margin-top: 4800px;
-    margin-left: -450px;
+    margin-top: 70px;
+    margin-left: 70px;
     background-color: rgba(238, 46, 62, 30%);
     position: absolute;
     border-radius: 15px;
@@ -1174,8 +1173,8 @@ body {
 .gamecube_figure2 {
     width: 80px;
     height: 80px;
-    margin-top: 5000px;
-    margin-left: -550px;
+    margin-top: 300px;
+    margin-left: -30px;
     background-color: rgba(74, 65, 120, 30%);
     position: absolute;
     border-radius: 15px;
@@ -1185,8 +1184,8 @@ body {
 .gamecube_figure3 {
     width: 80px;
     height: 80px;
-    margin-top: 4900px;
-    margin-left: 550px;
+    margin-top: 150px;
+    margin-left: 490px;
     background-color: rgba(18, 183, 122, 30%);
     position: absolute;
     border-radius: 15px;
@@ -1196,8 +1195,8 @@ body {
 .gamecube_figure4 {
     width: 80px;
     height: 80px;
-    margin-top: 5105px;
-    margin-left: 400px;
+    margin-top: 420px;
+    margin-left: 380px;
     background-color: rgba(255, 238, 0, 30%);
     position: absolute;
     border-radius: 15px;
@@ -1256,15 +1255,15 @@ body {
 }
 
 #xbox360_image {
-    width: 280px;
-    height: 380px;
+    width: 200px;
+    height: 300px;
 }
 
 .xbox360_figure1 {
     width: 120px;
     height: 60px;
-    margin-top: 5370px;
-    margin-left: 530px;
+    margin-top: 250px;
+    margin-left: 440px;
     background-color: rgba(223, 140, 1, 30%);
     position: absolute;
     border-radius: 15px;
@@ -1274,8 +1273,8 @@ body {
 .xbox360_figure2 {
     width: 220px;
     height: 65px;
-    margin-top: 5760px;
-    margin-left: -480px;
+    margin-top: 520px;
+    margin-left: -50px;
     background-color: rgba(102, 104, 12, 30%);
     position: absolute;
     border-radius: 15px;
@@ -1286,8 +1285,8 @@ body {
 .xbox360_figure3 {
     width: 120px;
     height: 60px;
-    margin-top: 5300px;
-    margin-left: 510px;
+    margin-top: 150px;
+    margin-left: 440px;
     background-color: rgba(193, 0, 10, 30%);
     position: absolute;
     border-radius: 15px;
@@ -1353,7 +1352,7 @@ body {
 .wii_figure1 {
     width: 220px;
     height: 65px;
-    margin-top: 5990px;
+    margin-top: 145px;
     margin-left: 250px;
     background-color: rgba(196, 102, 107, 30%);
     position: absolute;
@@ -1365,8 +1364,8 @@ body {
 .wii_figure2 {
     width: 220px;
     height: 65px;
-    margin-top: 6320px;
-    margin-left: -300px;
+    margin-top: 500px;
+    margin-left: 100px;
     background-color: rgba(94, 173, 248, 30%);
     position: absolute;
     border-radius: 15px;
@@ -1401,6 +1400,8 @@ body {
     gap: 20px;
     border-radius: 5px;
     margin-top: 100px;
+    position: relative;
+    z-index: 2;
 }
 
 .ps3_naglowek, .ps3_image, .ps3_text {
@@ -1428,7 +1429,47 @@ body {
     height: 180px;
 }
 
+.ps3_figure1 {
+    width: 220px;
+    height: 150px;
+    margin-top: 80px;
+    margin-left: 40px;
+    background-color: rgba(7, 7, 7, 0.3);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.ps3_figure2 {
+    width: 220px;
+    height: 150px;
+    margin-top: 400px;
+    margin-left: 280px;
+    background-color: rgba(7, 7, 7, 0.3);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.fake_ps3_box {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 25%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+    visibility: hidden;
+}
+
 .foot {
     width: 100%;
     height: 100px;
+    margin-top: 100px;
 }
